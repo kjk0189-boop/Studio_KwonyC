@@ -1,0 +1,17 @@
+{
+  "source": "studio-kwonyc-logo-concept-01.png",
+  "source_size": [
+    1536,
+    1024
+  ],
+  "vector_size": [
+    1428,
+    388
+  ],
+  "path_loops": 15,
+  "silhouette_iou": 0.997686,
+  "embedded_rasters": false,
+  "native_ai_created": false,
+  "illustrator_open_test": "not run: Illustrator unavailable",
+  "notes": "Original texture retained in concept PNG; tiny grain holes removed in vector exports."
+}
