@@ -13,6 +13,7 @@
 4. [브랜드와 로고](branding.md)
 5. [기술 구조](architecture.md) · [실행 순서](roadmap.md)
 6. [결정과 미결 사항](decisions.md) · [검증과 근거](sources-and-validation.md)
+   - [현재 VM 무료 대상 확인](free-tier-check.md)
 7. [게임과 기존 배포](games.md) · [도메인 설정](step-04-domain.md)
 8. [Git 저장소와 작업 규칙](repository.md)
 9. [작업 일지](work-log.md) · [다음 작업 인계](handoff-homepage.md)
