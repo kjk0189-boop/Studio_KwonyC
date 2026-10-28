@@ -1,5 +1,7 @@
 # 도메인·DNS·HTTPS
 
+최신 배포: 홈페이지를 Oracle VM에 적용하고 외부 루트 HTTPS 200·HTTP 308·www 301을 직접 확인했다. 현재 root는 /srv/studio-kwonyc/current다. 아래 /usr/share/caddy는 최초 도메인 설정 당시 기록이며 [배포 안내](deployment.md)가 최신이다.
+
 최신 결과(2026-10-28): 사용자가 https://studiokwonyc.com과 https://www.studiokwonyc.com이 모두 잘 열린다고 보고했다. DNS 및 양쪽 HTTPS 페이지 표시를 완료 처리한다. 인증서 상세·리디렉션 동작의 개별 검사 출력은 아직 없으므로 별도 검증 범위로 남긴다. 다음은 Caddy 기본 페이지 대신 실제 브랜드 사이트·게임 배포다.
 
 2026-10-28 사용자 신청 내역에서 **studiokwonyc.com 1년 등록 신청·결제 성공**을 확인했다. 주문·승인번호와 결제 상세는 기록하지 않는다. 최종 등록 상태·등록자 이메일 인증은 서비스 목록·메일에서 확인한다.

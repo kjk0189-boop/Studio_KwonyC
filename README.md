@@ -4,14 +4,14 @@
 
 ![Studio KWONYC 남색·흰색 로고](assets/branding/studio-kwonyc-variants-preview.png)
 
-- 홈페이지 주소: https://studiokwonyc.com/ — 현재 Caddy 기본 페이지, 새 초안 실제 배포 전
+- 홈페이지 주소: **https://studiokwonyc.com/** — Oracle VM 배포·외부 HTTPS 검증 완료
 - 대표 게임: [하루 스도쿠](https://kjk0189-boop.github.io/haru-sudoku/) — 기존 GitHub Pages 배포
 - [LLM 위키](wiki/README.md) · [진행 체크리스트](wiki/checklist.md) · [디자인 방향과 참고 사이트](wiki/homepage-design.md)
 - [로고 다운로드·Illustrator 편집 안내](assets/branding/README.md)
 
 ## 현재 상태
 
-Oracle Osaka VM에 Ubuntu와 Caddy를 준비하고 가비아 도메인·DNS·HTTPS를 연결했습니다. 루트·www 양쪽 접속은 사용자 보고로 확인했습니다. 이 저장소에는 준비 과정, 결정, 실행 안내, 검증 기록과 로고 자산을 관리합니다. **site/에 반응형 홈페이지 1차 초안을 구현했습니다. 실제 도메인 배포·자동 배포는 아직 없습니다.**
+Oracle Osaka VM에 Ubuntu와 Caddy를 준비하고 가비아 도메인·DNS·HTTPS를 연결했습니다. **site/의 홈페이지를 실제 도메인에 배포했습니다.** 외부 HTTPS 200·HTTP/www 이동·이미지/폰트 응답과 HTML SHA-256 일치를 확인했습니다. 이후 수정은 [배포·복구 안내](wiki/deployment.md)를 따릅니다. Git push만으로 자동 배포되지는 않습니다.
 
 다음은 **모바일·태블릿·데스크톱에 맞춰 재배치되는 깔끔한 포트폴리오** 제작입니다. 게임·개발 프로젝트·이력·개발 기록을 담습니다. 승인된 로고는 STUDIO 위 / KWONYC 아래 구성을 사용합니다.
 

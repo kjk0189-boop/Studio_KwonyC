@@ -2,6 +2,8 @@
 *.md text eol=lf
 *.py text eol=lf
 *.json text eol=lf
+*.sh text eol=lf
+*.ps1 text eol=lf
 *.svg text eol=lf
 *.eps text eol=lf
 *.png binary
