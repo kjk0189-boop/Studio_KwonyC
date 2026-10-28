@@ -9,6 +9,7 @@
 | 브랜드·도메인 | Studio KWONYC, studiokwonyc.com 가비아 구매 |
 | 홈페이지 운영 | Oracle VM 유지 |
 | 디자인 | 깔끔하고 심플한 모바일·웹 반응형 |
+| 레퍼런스 | baekseongjun.github.io + studio.design |
 | 콘텐츠 | 게임·개발 프로젝트·본인 이력 |
 | 로고 | STUDIO 위 / KWONYC 아래 시안 수용, 흰색·편집용 요청 |
 | Git | kjk0189-boop/Studio_KwonyC에 작업·위키 업로드 |
@@ -20,8 +21,8 @@
 
 ## 미결
 
-- 최종 레퍼런스·레이아웃·소개 문장·공개 경력·프로젝트 목록.
-- 프레임워크·배포 경로·자동 배포.
+- 초안 레이아웃·소개 문장·공개 경력·프로젝트 목록의 최종 승인.
+- 현재 초안은 buildless HTML/CSS/JavaScript로 구현. 배포 경로·자동 배포는 미확정.
 - 게임 도메인 변경·Oracle 이전.
 - 모바일 플레이 범위·최소 헤더 로고 크기.
 - 네이티브 AI 저장·실열기: Illustrator 부재, 현재 SVG·PDF·EPS 제공.

@@ -1,0 +1,12 @@
+{
+  "name": "studio-kwonyc",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve-site.mjs",
+    "check": "node --check site/app.js && node --check scripts/serve-site.mjs && node scripts/check-site.mjs",
+    "graph": "node scripts/site-graph.mjs"
+  },
+  "engines": { "node": ">=22" }
+}
