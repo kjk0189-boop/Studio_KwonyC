@@ -6,11 +6,15 @@
 graph TD
   index["site/index.html"]
   index --> asset0["site/app.js"]
-  index --> asset1["site/assets/haru-sudoku-preview.png"]
-  index --> asset2["site/assets/studio-kwonyc-navy.svg"]
-  index --> asset3["site/assets/studio-kwonyc-white.svg"]
-  index --> asset4["site/favicon.svg"]
-  index --> asset5["site/styles.css"]
+  index --> asset1["site/assets/fonts/Poppins-Regular.ttf"]
+  index --> asset2["site/assets/fonts/Pretendard-Regular.subset.woff2"]
+  index --> asset3["site/assets/haru-sudoku-current.png"]
+  index --> asset4["site/assets/studio-kwonyc-navy.svg"]
+  index --> asset5["site/assets/studio-kwonyc-white.svg"]
+  index --> asset6["site/design.css"]
+  index --> asset7["site/favicon.svg"]
+  index --> asset8["site/fonts.css"]
+  index --> asset9["site/styles.css"]
 ```
 
 콘텐츠와 링크는 site/index.html, 반응형은 site/styles.css, 메뉴·현재 섹션 표시는 site/app.js에서 수정한다.

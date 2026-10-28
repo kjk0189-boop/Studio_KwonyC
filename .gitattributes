@@ -6,3 +6,5 @@
 *.eps text eol=lf
 *.png binary
 *.pdf binary
+*.woff2 binary
+*.ttf binary

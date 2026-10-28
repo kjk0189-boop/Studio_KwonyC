@@ -1,0 +1,53 @@
+{
+  "fonts": [
+    {
+      "file": "Poppins-Bold.ttf",
+      "bytes": 155996,
+      "sha256": "983676516167748b74de6f4771fb384c664fd913acb8b471122ecacf5da5ea6c",
+      "header": "passed"
+    },
+    {
+      "file": "Poppins-Medium.ttf",
+      "bytes": 158576,
+      "sha256": "90373e7d838d32468438fc3e152dca0bdb12edcab99ea639f158790b1ba1fd05",
+      "header": "passed"
+    },
+    {
+      "file": "Poppins-Regular.ttf",
+      "bytes": 160316,
+      "sha256": "7e65201e9b79159e2300267cc885e16c8dcef2424cdfa09a29bfb0980a94a7ba",
+      "header": "passed"
+    },
+    {
+      "file": "Poppins-SemiBold.ttf",
+      "bytes": 157312,
+      "sha256": "d3bf1bdaf0550e83da9ac0b1d1d9fe6db086835a83aa28578e609a394b9a0286",
+      "header": "passed"
+    },
+    {
+      "file": "Pretendard-Bold.subset.woff2",
+      "bytes": 270784,
+      "sha256": "78eb71c33101ee7d4f8d1b777d193a12d00f8a296e712a8c417cf27abe946397",
+      "header": "passed"
+    },
+    {
+      "file": "Pretendard-Medium.subset.woff2",
+      "bytes": 268324,
+      "sha256": "6f4e897a59138903ae64e814df059790cf0e0ff73b8595810145aee23204469f",
+      "header": "passed"
+    },
+    {
+      "file": "Pretendard-Regular.subset.woff2",
+      "bytes": 267096,
+      "sha256": "01dd73155fdfab7ce9b25224523e85a96927e21aef97f21957d41f1bfa7e3878",
+      "header": "passed"
+    },
+    {
+      "file": "Pretendard-SemiBold.subset.woff2",
+      "bytes": 268752,
+      "sha256": "4247dc5e260b92640c2cbd0e75091154647b71e1d5884116655e2903468c54cc",
+      "header": "passed"
+    }
+  ],
+  "browser_render_verified": false
+}

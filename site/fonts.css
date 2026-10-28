@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+/* Unmodified upstream files, SIL OFL 1.1. Licenses: assets/fonts/. */
+/* Only Latin uses Poppins. Hangul falls through to Pretendard. */
+@font-face {
+  font-family: "Studio Poppins";
+  src: url("./assets/fonts/Poppins-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  unicode-range: U+0000-024F, U+1E00-1EFF;
+}
+@font-face {
+  font-family: "Studio Poppins";
+  src: url("./assets/fonts/Poppins-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  unicode-range: U+0000-024F, U+1E00-1EFF;
+}
+@font-face {
+  font-family: "Studio Poppins";
+  src: url("./assets/fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  unicode-range: U+0000-024F, U+1E00-1EFF;
+}
+@font-face {
+  font-family: "Studio Poppins";
+  src: url("./assets/fonts/Poppins-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  unicode-range: U+0000-024F, U+1E00-1EFF;
+}
+@font-face {
+  font-family: "Studio Pretendard";
+  src: url("./assets/fonts/Pretendard-Regular.subset.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Studio Pretendard";
+  src: url("./assets/fonts/Pretendard-Medium.subset.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Studio Pretendard";
+  src: url("./assets/fonts/Pretendard-SemiBold.subset.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Studio Pretendard";
+  src: url("./assets/fonts/Pretendard-Bold.subset.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}

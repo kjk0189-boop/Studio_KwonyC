@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+/* White/navy base with the original accents; serif exception for the art card. */
+:root {
+  --paper: #fff;
+  --ink: #25205b;
+  --text: #252538;
+  --muted: #687084;
+  --line: #e0e4ec;
+  --lilac: #ddd9f0;
+  --lime: #d1e988;
+  --orange: #f7b884;
+  --sans: "Studio Poppins", "Studio Pretendard", sans-serif;
+  --mono: var(--sans);
+}
+
+body, button, code, .mini-board span, .small-cross {
+  font-family: var(--sans);
+}
+
+.status-dot { background: var(--ink); }
+.hero h1 {
+  font-size: clamp(32px, 3.65vw, 62px);
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -.055em;
+}
+.hero-welcome, .hero-studio { display: block; }
+.hero-welcome {
+  font-size: .68em;
+  letter-spacing: -.035em;
+  margin-bottom: 15px;
+}
+.hero-studio { white-space: nowrap; }
+.hero-copy > p { color: var(--muted); }
+.hero-footnote p, .hero-footnote > .mono { line-height: 1.65; }
+.small-cross { font-size: 36px; }
+.game-desk { background: #edece3; border-color: #deded1; }
+.mini-card-top, .mini-card-bottom { color: #3e5550; }
+.mini-board { border-color: #52746a; background: #fafbf4; }
+.mini-board span {
+  color: #3c5f53;
+  border-color: #b3c0b3;
+  font-weight: 500;
+}
+.mini-board span:nth-child(5) { background: #dce5ce; }
+.type-desk { color: var(--lilac); }
+.type-desk > strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 48px;
+  line-height: 1.05;
+  font-weight: 600;
+  letter-spacing: -.06em;
+  margin-top: 30px;
+}
+.type-desk i { color: var(--lime); font-style: italic; font-weight: 400; }
+.type-flower { display: none; }
+.desk-sticker { background: var(--orange); border-color: #d99e71; }
+.code-desk em { color: #7662a4; }
+.code-desk code > span { color: #71678f; }
+.code-desk-bottom { letter-spacing: -.04em; }
+
+/* Each grid row stretches its articles; the link divider is pinned below copy. */
+.work-card { display: flex; flex-direction: column; min-width: 0; }
+.project-visual { flex-shrink: 0; }
+.project-meta { min-height: 64px; }
+.project-description { margin-bottom: 22px; }
+.project-links { margin-top: auto; min-height: 48px; align-content: start; }
+.sudoku-visual {
+  background: #f1f4f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sudoku-visual > .visual-label, .visual-title { flex-shrink: 0; }
+.sudoku-visual .visual-label, .visual-title { color: var(--ink); }
+.phone-preview {
+  position: relative;
+  top: auto;
+  left: auto;
+  flex-shrink: 0;
+  margin-top: 36px;
+  width: 226px;
+  transform: rotate(-7deg);
+  background: #fff;
+  border-color: #b9c4d6;
+  box-shadow: 5px 12px 20px #25205b12;
+}
+.sudoku-visual:hover .phone-preview { transform: rotate(-3deg) translateY(-6px); }
+.project-corner { color: var(--ink); background: #f1f4f980; border-color: #bfc7d7; }
+.live-label, .tag-label { color: #596a88; }
+.text-link:hover, .project-links a:hover { color: #4b6091; }
+.about {
+  background: #fff;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.about-mark { gap: 42px; }
+.about-logo { width: min(88%, 355px); height: auto; }
+.about-mark > span { color: #748099; }
+.note-category, .note-arrow { color: #65728c; }
+.note-row:hover { background: #f4f6fa; }
+.site-footer { padding-top: 38px; padding-bottom: 24px; }
+.footer-top { padding-bottom: 30px; }
+.footer-top > p {
+  font-size: 27px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: -.04em;
+}
+.footer-top > a span { width: 43px; height: 43px; font-size: 22px; }
+.footer-bottom { padding-top: 26px; }
+
+@media (max-width: 1100px) {
+  .hero h1 { font-size: 3.85vw; }
+  .about-mark { gap: 34px; }
+}
+
+@media (max-width: 760px) {
+  .hero h1 { font-size: clamp(28px, 7.3vw, 49px); }
+  .hero-welcome { margin-bottom: 12px; }
+  .hero-copy > p { font-size: 13px; }
+  .type-desk > strong { font-size: 36px; margin-top: 24px; line-height: 1.05; }
+  .code-desk-bottom { font-size: 8px; }
+  .about-mark { flex-direction: column; gap: 26px; padding: 10px 0 20px; }
+  .about-logo { width: min(85%, 280px); }
+  .about-mark > span { text-align: center; font-size: 8px; }
+  .project-meta { min-height: 58px; }
+  .project-links { min-height: 44px; }
+  .site-footer { padding-top: 32px; padding-bottom: 24px; }
+  .footer-top { padding-bottom: 25px; align-items: center; }
+  .footer-top > p { font-size: 22px; }
+  .footer-top > a span { width: 39px; height: 39px; font-size: 20px; }
+}
+
+@media (max-width: 370px) {
+  .hero h1 { font-size: 7.1vw; }
+  .type-desk > strong { font-size: 30px; }
+}

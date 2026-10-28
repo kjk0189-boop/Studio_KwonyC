@@ -10,6 +10,8 @@
 |---|---|
 | site/index.html | 소개 문구·게임/프로젝트·링크·기록 |
 | site/styles.css | 색상·레이아웃·반응형·모션 감소 |
+| site/design.css | 사용자 피드백 반영: 색상 포인트·타이포·카드 정렬·푸터 |
+| site/fonts.css | 로컬 Pretendard 한글·Poppins Latin 폰트 선언 |
 | site/app.js | 모바일 메뉴와 현재 섹션 표시 |
 | site/assets/ | 승인 로고 복사본과 게임 개발 캡처 |
 | scripts/serve-site.mjs | site 폴더만 제공하는 로컬 서버 |
@@ -46,6 +48,8 @@ python scripts/validate_repository.py
 - codegraph 도구·CLI는 사용할 수 없어 작은 HTML 자산 참조 그래프를 대체로 생성했다. 전체 JavaScript 호출 그래프가 아니다.
 
 ## 검토 후 배포
+
+배포 후에도 같은 소스를 수정 → 로컬 확인 → 변경된 정적 파일을 다시 배포하는 흐름으로 언제든 갱신할 수 있다. 도메인을 다시 구매하거나 VM을 새로 만들 필요는 없다. Git에 push하는 것만으로 VM 자동 배포가 되는 구성은 아직 만들지 않았다.
 
 디자인·문구와 공개 이력 확인 → 화면 크기별 실제 검증 → Caddyfile/기존 배포 백업 → site 내용 전송 → 경로/권한·Caddy 검증 → reload → 실제 도메인 검증. 현재 Oracle 설정·서비스는 변경하지 않았다.
 

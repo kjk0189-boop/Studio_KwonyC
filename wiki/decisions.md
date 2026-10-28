@@ -9,6 +9,8 @@
 | 브랜드·도메인 | Studio KWONYC, studiokwonyc.com 가비아 구매 |
 | 홈페이지 운영 | Oracle VM 유지 |
 | 디자인 | 깔끔하고 심플한 모바일·웹 반응형 |
+| 기본색·포인트 | 흰색·네이비 기본, 기존 라벤더·라임·살구색 등 소량 포인트 유지 |
+| 폰트 | 한글 Pretendard·영문 Poppins 로컬 제공. make it playful 장식만 기존 세리프 예외 |
 | 레퍼런스 | baekseongjun.github.io + studio.design |
 | 콘텐츠 | 게임·개발 프로젝트·본인 이력 |
 | 로고 | STUDIO 위 / KWONYC 아래 시안 수용, 흰색·편집용 요청 |
@@ -21,6 +23,7 @@
 
 ## 미결
 
+- 상세 콘텐츠는 디자인을 먼저 잡은 뒤 점진적으로 수정한다. 배포 후에도 수정·재배포 가능하며 현재 VM 자동 배포는 없다.
 - 초안 레이아웃·소개 문장·공개 경력·프로젝트 목록의 최종 승인.
 - 현재 초안은 buildless HTML/CSS/JavaScript로 구현. 배포 경로·자동 배포는 미확정.
 - 게임 도메인 변경·Oracle 이전.
