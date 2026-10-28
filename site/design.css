@@ -36,6 +36,15 @@ body, button, code, .mini-board span, .small-cross {
 .hero-footnote p, .hero-footnote > .mono { line-height: 1.65; }
 .small-cross { font-size: 36px; }
 .game-desk { background: #edece3; border-color: #deded1; }
+.desk-game-image {
+  width: 100%;
+  height: 174px;
+  margin: 12px 0 16px;
+  object-fit: cover;
+  object-position: center 18%;
+  border: 1px solid #c9d0db;
+  border-radius: 3px;
+}
 .mini-card-top, .mini-card-bottom { color: #3e5550; }
 .mini-board { border-color: #52746a; background: #fafbf4; }
 .mini-board span {
@@ -117,6 +126,7 @@ body, button, code, .mini-board span, .small-cross {
 }
 
 @media (max-width: 760px) {
+  .desk-game-image { height: 132px; margin: 10px 0 14px; }
   .hero h1 { font-size: clamp(28px, 7.3vw, 49px); }
   .hero-welcome { margin-bottom: 12px; }
   .hero-copy > p { font-size: 13px; }
