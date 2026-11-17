@@ -48,4 +48,6 @@
 
 ## Git 결과 확인
 
-이번 파일만 명시적으로 스테이징하고 diff 검토 후 커밋·push한다. 완료 시 final 보고와 `git status --short --branch`, `git rev-list --left-right --count HEAD...origin/main`으로 실제 동기화 상태를 확인한다. 자기 커밋 SHA를 문서에 고정해 반복 커밋을 만들지 않는다.
+준비 대상 9개 파일만 명시적으로 스테이징하고 staged diff/check와 파일 집합 검사를 통과한 뒤 커밋 `3949ced`를 main에 push했다. 이후 git ls-remote의 원격 main SHA와 로컬 HEAD 일치를 확인했다. 당시 작업 트리는 깨끗하고 ahead/behind는 0/0이었다. 기존 사용자 변경·별도 남겨둔 미커밋 파일은 없다.
+
+이 결과 기록은 후속 문서 커밋으로 반영한다. 최종 상태는 완료 보고와 `git status --short --branch`, `git rev-list --left-right --count HEAD...origin/main`으로 확인한다. 자기 커밋 SHA를 문서에 고정해 반복 커밋을 만들지 않는다.

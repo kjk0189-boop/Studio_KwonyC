@@ -25,7 +25,9 @@ Studio KWONYC는 직접 만든 게임·개발 프로젝트·이력을 모으는 
 | 이미 ignore되지만 추적 중인 파일 | 없음 |
 | 이번 변경 | 이 문서·설치/검증 기록·인계 규칙·ignore 보강 등, 아래 검증 기록 참조 |
 
-이 인계 준비는 별도 커밋으로 `main`에 반영한다. 자기 자신을 포함하는 최종 커밋 SHA는 문서에 고정하지 않는다. 실제 현재 상태는 `git status --short --branch`, `git log -1 --oneline`, `git fetch origin` 후 `git rev-list --left-right --count HEAD...origin/main`으로 확인한다. 파일이 존재하는 것만으로 push 완료를 판단하지 않는다. 커밋·push의 실제 결과는 작업 완료 보고와 원격 조회로 확인한다.
+**인계 준비 반영 확인:** 2026-11-17 준비 커밋 `3949ced`를 기존 `origin/main`에 push하고 `git ls-remote`로 같은 SHA임을 확인했다. 그 시점의 작업 트리는 깨끗했고 ahead/behind는 0/0이었다. 이 결과를 남기는 후속 문서 커밋도 같은 브랜치에 반영한다. 기존 사용자 변경으로 남겨둔 파일은 없다.
+
+자기 자신을 포함하는 최종 커밋 SHA는 문서에 고정하지 않는다. 새 작업 때 실제 현재 상태는 `git status --short --branch`, `git log -1 --oneline`, `git fetch origin` 후 `git rev-list --left-right --count HEAD...origin/main`으로 확인한다. 파일이 존재하는 것만으로 push 완료를 판단하지 않는다.
 
 ## 구현 완료된 내용
 
