@@ -13,6 +13,19 @@
 .oci/
 .ssh/
 credentials*
+.aws/
+.azure/
+.gcloud/
+*.ppk
+*.p8
+id_rsa
+id_ed25519
+# Developer-local configuration (share templates instead of actual values)
+.envrc
+.npmrc
+.pypirc
+*.local
+*.code-workspace
 # Dependencies, output, local tooling
 node_modules/
 dist/
@@ -20,6 +33,10 @@ build/
 __pycache__/
 *.pyc
 .venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 tmp/
 .DS_Store
 Thumbs.db

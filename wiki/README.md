@@ -1,5 +1,7 @@
 # Studio KWONYC LLM 위키
 
+**2026-11-17 새 노트북 인계:** [최신 HANDOFF](../HANDOFF.md) · [설치 안내](../docs/SETUP.md) · [이번 검증 기록](../docs/HANDOFF-VERIFICATION.md). 아래 10월 운영 결과는 당시 확인이며 이번 서버 재검증이 아니다.
+
 최종 정리: 2026-10-28. **Studio KWONYC 홈페이지 실제 도메인 배포·외부 HTTPS 검증 완료.**
 
 ## 현재 사실을 읽는 순서

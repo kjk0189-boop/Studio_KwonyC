@@ -2,6 +2,8 @@
 
 개인 게임과 개발 이력을 모으는 스튜디오 홈페이지 프로젝트입니다.
 
+**새 노트북·새 채팅:** [작업 인수인계](HANDOFF.md) → [설치·실행 안내](docs/SETUP.md) → [이번 인계 검증 기록](docs/HANDOFF-VERIFICATION.md)을 먼저 읽습니다. Git·Node.js로 기본 개발이 가능하며 필수 환경변수·별도 패키지 설치·빌드 단계는 없습니다.
+
 ![Studio KWONYC 남색·흰색 로고](assets/branding/studio-kwonyc-variants-preview.png)
 
 - 홈페이지 주소: **https://studiokwonyc.com/** — Oracle VM 배포·외부 HTTPS 검증 완료
@@ -39,7 +41,7 @@ node scripts/serve-site.mjs
 
 ## 작업을 이어갈 때
 
-`AGENTS.md` → `wiki/README.md` → `wiki/project.md` → `wiki/checklist.md` 순서로 읽습니다. 과거 시행착오 문서보다 최신 현황을 우선합니다. 변경된 사실은 주제 문서에, 이력은 `wiki/work-log.md`에 남깁니다.
+`AGENTS.md` → `HANDOFF.md` → `docs/SETUP.md` → `wiki/README.md` 순서로 읽고 Git 상태를 확인합니다. 과거 시행착오 문서보다 최신 인수인계를 우선합니다. 의미 있는 작업 완료 시 HANDOFF.md·관련 위키·작업 일지를 갱신하고 커밋·push 여부를 정확히 기록합니다.
 
 이 기록은 전체 채팅 원문이나 VM 전체 백업이 아닙니다. 스도쿠 코드는 [별도 게임 저장소](https://github.com/kjk0189-boop/haru-sudoku)에서 관리합니다. 개인 키·토큰·결제 상세는 포함하지 않습니다.
 
