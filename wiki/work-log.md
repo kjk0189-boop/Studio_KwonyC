@@ -568,7 +568,7 @@
 - codegraph CLI/연결 도구가 없어 기존 HTML 자산 참조 그래프 및 코드 import를 사용했다. 전체 AST/호출 분석으로 간주하지 않으며 패키지명을 추측해 설치하지 않았다.
 - `node scripts/serve-site.mjs` 실행 중: http://127.0.0.1:4173/ . 기본 포트 충돌 없음. HTML·JS·CSS·로고·게임 PNG·Pretendard WOFF2·Poppins TTF 실제 HTTP200과 MIME 확인. 다른 프로세스는 종료하지 않았다.
 - 브라우저 도구의 loopback origin 접근 승인이 거절되어 실제 렌더·메뉴 클릭·모바일 크기·터치·확대는 미검증. 정적/모의 DOM·HTTP 성공을 화면 검증으로 보고하지 않는다. 사용자가 브라우저에서 위 주소를 열어 메뉴 및 390px 너비/200% 확대를 확인한다.
-- GitHub 앱 연결 계정과 기존 커밋 작성자가 일치함을 확인해 저장소 로컬 작성자 설정만 적용. 터미널 Git은 schannel 오류로 clone 시 일회성 `-c http.sslBackend=openssl` 사용. 터미널 push dry-run은 wincredman 접근 실패 및 username 비대화형 오류. 연결된 GitHub 도구를 이용해 이번 문서만 반영하고 동기화 결과를 따로 확인한다. 인증 값을 출력/저장하지 않았다.
+- GitHub 앱 연결 계정과 기존 커밋 작성자가 일치함을 확인해 저장소 로컬 작성자 설정만 적용. 터미널 Git은 schannel 오류로 clone 시 일회성 `-c http.sslBackend=openssl` 사용. 터미널 push dry-run은 wincredman 접근 실패 및 username 비대화형 오류. 연결된 GitHub 도구로 이번 문서만 main에 반영 완료(준비 커밋 `ad4fea4`). 로컬 fetch와 fast-forward 후 작업 트리 깨끗함·ahead/behind 0/0을 확인했다. 이 결과의 후속 기록도 같은 문서 범위로 반영한다. 인증 값을 출력/저장하지 않았다.
 - 이번 파일: HANDOFF.md, docs/HANDOFF-VERIFICATION.md, wiki/work-log.md. 기존 사용자 변경은 없고 구현·배포 설정은 수정하지 않았다. 커밋 자체 SHA를 선기록하지 않으며 최종 보고와 원격 HEAD/로컬 HEAD 비교를 따른다.
 - 이번 범위는 로컬 개발이다. 실제 도메인 배포·Oracle·DNS·SSH 접속·실서비스 재검증·로고 재생성은 미수행. 과거 호스팅 성공을 이번 성공으로 쓰지 않는다. SSH 개인 키·GitHub 인증·MCP/스킬 설정과 게임 localStorage 기록은 Git clone으로 이전되지 않는다.
 - 다음: 일반 브라우저의 데스크톱/모바일 실제 화면 확인. 배포가 필요할 때만 기존 docs/SETUP.md와 wiki/deployment.md에 따라 별도 인증·배포한다.
