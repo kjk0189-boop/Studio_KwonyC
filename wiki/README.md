@@ -20,6 +20,8 @@
 8. [Git 저장소와 작업 규칙](repository.md)
 9. [작업 일지](work-log.md) · [다음 작업 인계](handoff-homepage.md)
 
+- [Blog 원고와 관리자 글쓰기](blog-editor.md) — 공통 Markdown, 파일 불러오기, 이미지와 발행 방향
+
 ## 현재 다음 행동
 
 https://studiokwonyc.com/ 에서 배포본을 확인한다. 다음은 모바일 실제 화면·확대·키보드·터치 검증과 공개할 이력 정보 수집이다. 수정 후에는 배포 스크립트로 다시 반영할 수 있다.
