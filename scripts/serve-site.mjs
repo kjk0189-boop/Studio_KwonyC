@@ -15,7 +15,7 @@ const server = createServer(async (request, response) => {
   try {
     const pathname = decodeURIComponent(new URL(request.url, 'http://127.0.0.1').pathname);
     if (pathname.includes('\0')) throw new Error('Invalid path');
-    const candidate = resolve(root, `.${pathname === '/' ? '/index.html' : pathname}`);
+    const candidate = resolve(root, `.${pathname.endsWith('/') ? pathname + 'index.html' : pathname}`);
     const file = await realpath(candidate);
     if (!file.startsWith(root + sep) || !(await stat(file)).isFile()) {
       response.writeHead(404); response.end('Not found'); return;

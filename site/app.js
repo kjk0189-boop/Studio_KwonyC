@@ -20,7 +20,8 @@ mobileMenu.addEventListener('click', (event) => {
   if (!link) return;
   closeMenu();
   // Move focus out of the now-hidden menu to the destination section.
-  const section = document.querySelector(link.hash);
+  const section = link.hash ? document.querySelector(link.hash) : null;
+  if (!section) return;
   section.setAttribute('tabindex', '-1');
   section.focus({ preventScroll: true });
 });
@@ -38,23 +39,23 @@ desktopLayout.addEventListener('change', (event) => {
   if (event.matches) closeMenu();
 });
 
-const navLinks = [...document.querySelectorAll('.desktop-nav .nav-link')];
-const sections = [...document.querySelectorAll('main > section[id]')];
-function markSection() {
-  const current = sections.reduce((selected, section) =>
-    section.getBoundingClientRect().top <= 180 ? section.id : selected, 'home');
-  for (const link of navLinks) {
-    const active = link.hash === `#${current}`;
-    link.classList.toggle('active', active);
-    if (active) link.setAttribute('aria-current', 'location');
-    else link.removeAttribute('aria-current');
+
+const categoryFilters = document.querySelector('.blog-filters');
+if (categoryFilters) {
+  const posts = [...document.querySelectorAll('#blog-posts [data-category]')];
+  const empty = document.querySelector('#blog-empty');
+  const options = [...categoryFilters.querySelectorAll('[data-filter]')];
+  categoryFilters.hidden = false;
+  for (const option of options) {
+    option.addEventListener('click', () => {
+      const category = option.dataset.filter;
+      for (const button of options) {
+        button.setAttribute('aria-pressed', String(button === option));
+      }
+      for (const post of posts) {
+        post.hidden = category !== 'all' && post.dataset.category !== category;
+      }
+      empty.hidden = posts.some(post => !post.hidden);
+    });
   }
 }
-
-let queued = false;
-window.addEventListener('scroll', () => {
-  if (queued) return;
-  queued = true;
-  requestAnimationFrame(() => { markSection(); queued = false; });
-}, { passive: true });
-markSection();

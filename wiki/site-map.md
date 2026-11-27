@@ -5,16 +5,22 @@
 ```mermaid
 graph TD
   index["site/index.html"]
-  index --> asset0["site/app.js"]
-  index --> asset1["site/assets/fonts/Poppins-Regular.ttf"]
-  index --> asset2["site/assets/fonts/Pretendard-Regular.subset.woff2"]
-  index --> asset3["site/assets/haru-sudoku-current.png"]
-  index --> asset4["site/assets/studio-kwonyc-navy.svg"]
-  index --> asset5["site/assets/studio-kwonyc-white.svg"]
-  index --> asset6["site/design.css"]
-  index --> asset7["site/favicon.svg"]
-  index --> asset8["site/fonts.css"]
-  index --> asset9["site/styles.css"]
+  index --> asset0["site/about/index.html"]
+  index --> asset1["site/app.js"]
+  index --> asset2["site/assets/fonts/Poppins-Regular.ttf"]
+  index --> asset3["site/assets/fonts/Pretendard-Regular.subset.woff2"]
+  index --> asset4["site/assets/haru-sudoku-current.png"]
+  index --> asset5["site/assets/studio-kwonyc-navy.svg"]
+  index --> asset6["site/assets/studio-kwonyc-white.svg"]
+  index --> asset7["site/blog.css"]
+  index --> asset8["site/blog/index.html"]
+  index --> asset9["site/design.css"]
+  index --> asset10["site/favicon.svg"]
+  index --> asset11["site/fonts.css"]
+  index --> asset12["site/index.html"]
+  index --> asset13["site/notes/index.html"]
+  index --> asset14["site/styles.css"]
+  index --> asset15["site/work/index.html"]
 ```
 
-콘텐츠와 링크는 site/index.html, 반응형은 site/styles.css, 메뉴·현재 섹션 표시는 site/app.js에서 수정한다.
+콘텐츠와 링크는 site/index.html, 반응형은 site/styles.css, 모바일 메뉴와 Blog 카테고리 동작은 site/app.js에서 수정한다.
